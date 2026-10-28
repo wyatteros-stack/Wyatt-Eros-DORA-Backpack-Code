@@ -23,7 +23,7 @@ Adafruit_NeoPixel rightPixels(NUM_LEDS, PIN_LED_RIGHT, NEO_GRB + NEO_KHZ800);
 Adafruit_DRV2605 hapticMotor;
 
 // -------------------- Constants --------------------
-const int IMBALANCE_THRESHOLD = 15;
+const int IMBALANCE_THRESHOLD = 25;
 
 void setup() {
 
@@ -34,8 +34,8 @@ void setup() {
   rightPixels.begin();
 
   // Reduce brightness to 80% (20% lower)
-  leftPixels.setBrightness(204);    // 204/255 ≈ 80%
-  rightPixels.setBrightness(204);
+  leftPixels.setBrightness(102);    // 204/255 ≈ 80%
+  rightPixels.setBrightness(102);
 
   leftPixels.clear();
   rightPixels.clear();
@@ -64,11 +64,11 @@ void updateBackpackStrap(Adafruit_NeoPixel &strip, int weightValue) {
 
   strip.clear();
 
-  if (weightValue > 320) {
+  if (weightValue > 330) {
     // Heavy load -> Green
     strip.setPixelColor(0, strip.Color(0, 255, 0));
   }
-  else if (weightValue >= 300 && weightValue <= 320) {
+  else if (weightValue >= 310 && weightValue <= 330) {
     // Medium load -> Yellow
     strip.setPixelColor(0, strip.Color(255, 255, 0));
     strip.setPixelColor(1, strip.Color(255, 255, 0));
@@ -89,7 +89,7 @@ void loop() {
   int leftWeight = analogRead(PIN_FSR_LEFT);
 
   // Right sensor calibration
-  int rightWeight = analogRead(PIN_FSR_RIGHT) * 0.8;
+  int rightWeight = analogRead(PIN_FSR_RIGHT) * 0.75;
 
   // Calculate absolute difference
   int weightDifference = abs(leftWeight - rightWeight);
