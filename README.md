@@ -1,6 +1,8 @@
 **Contributors:**
 
-    Justin Cho
+    Justin Cho (main writer)
+    Wyatt Eros (FRS debugging and general debugging)
+    Neethika Vjay
 
 **D.O.R.A. — Smart Backpack**
 
