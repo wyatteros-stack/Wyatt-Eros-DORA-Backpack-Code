@@ -4,7 +4,7 @@
     Wyatt Eros (FRS debugging and general debugging)
     Neethika Vjay
 
-**D.O.R.A. — Smart Backpack**
+**D.O.R.A. Smart Backpack**
 
 This is the code for D.O.R.A. (Data-Optimized Rebalancing Apparatus), a backpack system that uses force sensors to detect uneven loading and gives the wearer visual and haptic feedback.
 
@@ -52,7 +52,7 @@ If the difference is greater than 25, the haptic motor turns on.
 
 **LED Feedback**
 
-The number and color of LEDs changes based on the force measured by each strap:
+The number and color of LEDs change based on the force measured by each strap:
 
 Below 310: 3 red LEDs
 
