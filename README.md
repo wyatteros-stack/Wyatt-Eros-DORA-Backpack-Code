@@ -1,3 +1,7 @@
+**Contributors:**
+
+    Justin Cho
+
 **D.O.R.A. — Smart Backpack**
 
 This is the code for D.O.R.A. (Data-Optimized Rebalancing Apparatus), a backpack system that uses force sensors to detect uneven loading and gives the wearer visual and haptic feedback.
